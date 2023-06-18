@@ -1,42 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset = "UTF-8">
-    <title> TheSoundOfWA - home </title>
-    <link rel = "icon" href = "https://i.postimg.cc/CMrmWnJR/favicon.png">
-    <style type = "text/css">
-      a:link {
-        color:blue;
-        text-decoration:none;
-      }
-      a:visited {
-        color:blue;
-        text-decoration:none;
-      }
-      a:hover {
-        color:red;
-        text-decoration:none;
-      }
-      a:active {
-        color:blue;
-        text-decoration:none;
-      }
-    </style>
-  </head>
-  
-  <body>
-    <p>Hello 大家好</p>
-    <p>我是TheSoundOfWA，这是我的个人网站。 </p>
-    <p>很高兴你来到这里, 目前你可以在以下的网站找到我</p>
-    
-    <a href="https://blog.csdn.net/weixin_73410458?spm=1000.2115.3001.5343">CSDN</a> <br>
-    <a href="https://www.luogu.com.cn/user/809373" color="blue">洛谷</a>
-    
-    <p>当然，我也有自己的私人题库</p>
-    <a href="https://www.luogu.com.cn/team/58423">点击此处即可访问</a>
+	<head>
+		<meta charset = "UTF-8">
+		<style type="text/css">
+			a:link {
+				color:blue;
+				text-decoration:none;
+			}
 
-    <p>想看看我的班级博客吗？</p>
-    <a href="https://thesoundofwa.github.io/Login">点击这里吧！</a>
-    <p>（请先输入账号和密码，以获得访问权）</p>
-  </body>
+			a:visited {
+				color:blue;
+				text-decoration:none;
+			}
+
+			a:hover {
+				color:red;
+				text-decoration:none;
+			}
+
+			a:active {
+				color:blue;
+				text-decoration:none;
+			}
+		</style>
+		<title>TheSoundOfWA - home</title>
+	</head>
+
+	<body>
+		<div class = "big_box">
+			<div class = "left_box">
+				<div style = "width: 150px; overflow: hidden;">
+					<div id = "title" style = "height: 30px; background-color: #46ff00;" onclick = "onTileClick()">网页导航</div>
+					
+					<div id = "content" style = "height: 0px; background-color: rgb(185 255 217); transition: height 0.2s;">
+					    <t>首页</t> <br>
+						<a href="https://thesoundofwa.github.io/privateblog">个人博客</a> <br>
+					    <a href="https://thesoundofwa.github.io/Login/">班级博客</a> <br>
+					</div>
+				</div>
+			
+				<script type="text/javascript">
+					var content = document.getElementById("content");
+					function onTileClick() {
+						content.style.height = content.offsetHeight === 850 ? 0 + 'px' : 850 + 'px';
+					}
+				</script>
+			</div>
+
+			<div class = "right_box">
+				<p>Hello 大家好</p>
+				<p>我是TheSoundOfWA，这是我的个人网站。 </p>
+				<p>很高兴你来到这里, 目前你可以在以下的网站找到我</p>
+    
+				<a href="https://blog.csdn.net/weixin_73410458?spm=1000.2115.3001.5343">CSDN</a> <br>
+				<a href="https://www.luogu.com.cn/user/809373" color="blue">洛谷</a>
+    
+				<p>当然，我也有自己的私人题库</p>
+				<a href="https://www.luogu.com.cn/team/58423">点击此处即可访问</a>
+
+				<p>想看看我的班级博客吗？</p>
+				<a href="https://thesoundofwa.github.io/Login">点击这里吧！</a>
+				<p>（请先输入账号和密码，以获得访问权）</p>
+			</div>
+		</div>
+	</body>
+
+	<style>
+		.big_box {
+			width: 1500px;
+			height: 880px;
+		}
+
+		.left_box {
+			width: 150px;
+			height: 880px;
+			float: left;
+		}
+		
+		.right_box {
+			width: 1300px;
+			height: 200px;
+			float: right;
+		}
+	</style>
 </html>
