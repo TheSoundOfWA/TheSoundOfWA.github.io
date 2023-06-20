@@ -22,10 +22,6 @@
 				color:blue;
 				text-decoration:none;
 			}
-
-			a {
-				font-size: 20px;
-			}
 		</style>
 		<title>TheSoundOfWA - home</title>
 	</head>
@@ -34,12 +30,10 @@
 		<div class = "big_box">
 			<div class = "left_box">
 				<div style = "width: 150px; overflow: hidden;">
-					<div id = "title" style = "height: 30px; background-color: #46ff00;" onclick = "onTileClick()">
-						<font size="5">网页导航</font>
-					</div>
+					<div id = "title" style = "height: 30px; background-color: #46ff00;" onclick = "onTileClick()">网页导航</div>
 					
 					<div id = "content" style = "height: 0px; background-color: rgb(185 255 217); transition: height 0.2s;">
-					    <font size="5">首页</font> <br>
+					    <font>首页</font> <br>
 						<a href="https://thesoundofwa.github.io/privateblog">个人博客</a> <br>
 					    <a href="https://thesoundofwa.github.io/Login/">班级博客</a> <br>
 					</div>
@@ -48,25 +42,25 @@
 				<script type="text/javascript">
 					var content = document.getElementById("content");
 					function onTileClick() {
-						content.style.height = content.offsetHeight === 850 ? 0 + 'px' : 850 + 'px';
+						content.style.height = content.offsetHeight === 853 ? 0 + 'px' : 853  + 'px';
 					}
 				</script>
 			</div>
 
 			<div class = "right_box">
-				<font size="5">Hello 大家好</font> <br>
-				<font size="5">我是TheSoundOfWA，这是我的个人网站。 </font> <br>
-				<font size="5">很高兴你来到这里, 目前你可以在以下的网站找到我</font> <br>
+				<p>Hello 大家好</p>
+				<p>我是TheSoundOfWA，这是我的个人网站。 </p>
+				<p>很高兴你来到这里, 目前你可以在以下的网站找到我</p>
     
 				<a href="https://blog.csdn.net/weixin_73410458?spm=1000.2115.3001.5343">CSDN</a> <br>
 				<a href="https://www.luogu.com.cn/user/809373" color="blue">洛谷</a> <br>
     
-				<font size="5">当然，我也有自己的私人题库</font> <br>
+				<p>当然，我也有自己的私人题库</p>
 				<a href="https://www.luogu.com.cn/team/58423">点击此处即可访问</a> <br>
 
-				<font size="5">想看看我的班级博客吗？</font> <br>
+				<p>想看看我的班级博客吗？</p>
 				<a href="https://thesoundofwa.github.io/Login">点击这里吧！</a> <br>
-				<font size="5">（请先输入账号和密码，以获得访问权）</font>
+				<p>（请先输入账号和密码，以获得访问权）</p>
 			</div>
 		</div>
 	</body>
@@ -74,22 +68,19 @@
 	<style>
 		.big_box {
 			width: 1500px;
-			height: 880px;
-			background-color: #012345;
+			height: 883px;
 		}
 
 		.left_box {
 			width: 150px;
-			height: 880px;
+			height: 883px;
 			float: left;
-			background-color: #543210;
 		}
 		
 		.right_box {
 			width: 1320px;
-			height: 880px;
+			height: 883px;
 			float: right;
-			background-color: #123421;
 		}
 	</style>
 </html>
